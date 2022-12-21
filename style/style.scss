@@ -1,0 +1,35 @@
+.page {
+  &_admin {
+    body {
+      background-color: #c0c0c0;
+      color: red;
+      h2 {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+  &_usager {
+    body {
+      background-color: #c0c0c0;
+      color: blue;
+      h2 {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+  &_restreinte {
+    body {
+      background-color: #c0c0c0;
+      color: green;
+      h2 {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+}

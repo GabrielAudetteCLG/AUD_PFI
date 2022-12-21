@@ -1,0 +1,15 @@
+{
+  "name": "aud_pfi",
+  "version": "1.0.0",
+  "description": "Projet Final integration Audette Gabriel",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index",
+    "start": "node index"
+  },
+  "author": "Gabriel Audette",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
