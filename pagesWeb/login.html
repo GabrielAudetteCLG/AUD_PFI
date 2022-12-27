@@ -12,7 +12,7 @@
 
 <body>
   <h1>Page Login</h1>
-  <h1>Formulaire d'identification</h1>
+  <h1>Formulaire d'identification POST</h1>
   <div class="menu">
     <p>Menu</p>
     <div class="menu-bar">
@@ -22,14 +22,14 @@
     </div>
   </div>
   <div class="login_box">
-    <form action="acces.html" method="POST">
+    <form action="acess.html" method="POST">
       <p>Username :</p>
-      <input class="user
+      <input name="user" class="user
       " type="text">
       <p>Password :</p>
-      <input type="password">
+      <input name="pass" class="pass" type="password">
       <div>
-        <button type="button" onclick=extraction_donnes()>Envoyer</button>
+        <button type="submit">Envoyer</button>
         <button type="button" onclick="extraction_donnes()">Rétablir</button>
       </div>
     </form>

@@ -20,15 +20,18 @@
     </div>
   </div>
 
-  <h1>Formulaire d'identification</h1>
+  <h1>Formulaire d'identification GET</h1>
   <div class="login_box">
-    <form action="acces.html">
+    <form action="acess.html" method="GET">
       <p>Username :</p>
-      <input type="text">
+      <input name="user" class="user
+      " type="text">
       <p>Password :</p>
-      <input type="password">
-      <button type="button" onclick="'#'">Envoyer </button>
-      <button type="button" onclick="'#'">Rétablir</button>
+      <input name="pass" class="pass" type="password">
+      <div>
+        <button type="submit">Envoyer</button>
+        <button type="button" onclick="extraction_donnes()">Rétablir</button>
+      </div>
     </form>
   </div>
 </body>
