@@ -59,7 +59,7 @@ function fournirPageWeb(fileName, reponse) {
 function traiterPOST(requete, reponse) {
   let postData = "";
   requete.on("data", (donnee) => {
-    postData = postData + donnee;
+    postData += donnee;
   });
   requete.on("end", () => {
     // Si rien recu dans l'url
@@ -145,8 +145,10 @@ function changementContenuPageWeb(fileName, reponse, userTrouver) {
       // Si pas d'erreur, retourner les informations par les bonnes dans la page
     } else {
       reponse.writeHead(SUCCESS, { "Content-Type": fileType });
-      reponse.write(contenu.replace(/_nom_nom/g, userTrouver.nom));
-      reponse.write(contenu.replace(/_login_login/g, userTrouver.login));
+      reponse.write(contenu.toString().replace(/_nom_nom/g, userTrouver.nom));
+      reponse.write(
+        contenu.toString().replace(/_login_login/g, userTrouver.login)
+      );
       reponse.end();
     }
   });
