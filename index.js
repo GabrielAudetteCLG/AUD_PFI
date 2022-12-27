@@ -9,8 +9,6 @@ const UNEXISTING = 404;
 const ERRORSERVER = 500;
 
 // Dans ce projet, j'ai une page Login qui prends un user & un pass, qui redirige a une des 3 pages HTML selon le rôle donné de l'utilisateur donné, que je passe en param POST / GET avec mon formulaire
-// Quand j'exécute l'action du formulaire vérification si le user & password match la liste reçu
-// Redirection a la page du role selon la liste
 
 // Création & appel du serveur
 http
