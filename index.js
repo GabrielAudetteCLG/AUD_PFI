@@ -31,7 +31,7 @@ http
   .listen(PORT, () =>
     console.log(`Le serveur est démarré sur le port :${PORT}`)
   );
-//
+
 function fournirPageWeb(fileName, reponse) {
   let nomFichier = path.join(__dirname, "pagesWeb", fileName);
   let fileType = typeContenu(fileName);
